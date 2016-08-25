@@ -6,7 +6,7 @@ description: CubeCraft Trial Tasks
 commands:
     sneak:
         usage: /sneak <player>
-        description: Without using a third party library (e.g ProtocolLib) make all players appear crouched to a given player
+        description: Without using a third party library (e.g ProtocolLib) make all players appear crouched to a given player.
     stand:
         usage: /stand <player>
         description: Easier than forcing the tester to log out and back in.
@@ -16,3 +16,6 @@ commands:
     primitive:
         usage: /primitive <number>
         description: Given a String, convert it to a char[] and using nothing but primitives convert the char[] to an int. You may assume the String is a valid output of Integer.toString().
+    sign:
+        usage: /sign <player>
+        description: Create a method which displays a sign edit screen to a specified player, then once the player has finished editing the sign pass the string on the sign into a provided Consumer.

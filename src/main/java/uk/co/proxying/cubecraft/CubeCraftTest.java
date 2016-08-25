@@ -2,11 +2,9 @@ package uk.co.proxying.cubecraft;
 
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
-import uk.co.proxying.cubecraft.commands.CommandFizzBuzz;
-import uk.co.proxying.cubecraft.commands.CommandPrimitive;
-import uk.co.proxying.cubecraft.commands.CommandToggleSneak;
-import uk.co.proxying.cubecraft.commands.CommandToggleStand;
+import uk.co.proxying.cubecraft.commands.*;
 import uk.co.proxying.cubecraft.listeners.PlayerListener;
+import uk.co.proxying.cubecraft.objects.EditableSign;
 
 import java.util.logging.Logger;
 
@@ -28,8 +26,10 @@ public final class CubeCraftTest extends JavaPlugin {
         getCommand("stand").setExecutor(new CommandToggleStand());
         getCommand("fizzbuzz").setExecutor(new CommandFizzBuzz());
         getCommand("primitive").setExecutor(new CommandPrimitive());
+        getCommand("sign").setExecutor(new CommandSign());
 
         UtilityTasks.getInstance().runTasks();
+        EditableSign.getInstance().runTasks();
     }
 
     @Override
