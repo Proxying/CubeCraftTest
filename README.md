@@ -12,6 +12,7 @@ Basic Java & Logic Puzzles
 
 Spigot/Bungeecord API Challenges
 
+[Complete]
 1. Medium: Write an Item Menu API
 
 [Complete]

@@ -27,6 +27,7 @@ public final class CubeCraftTest extends JavaPlugin {
         getCommand("fizzbuzz").setExecutor(new CommandFizzBuzz());
         getCommand("primitive").setExecutor(new CommandPrimitive());
         getCommand("sign").setExecutor(new CommandSign());
+        getCommand("menu").setExecutor(new CommandMenu());
 
         UtilityTasks.getInstance().runTasks();
         EditableSign.getInstance().runTasks();

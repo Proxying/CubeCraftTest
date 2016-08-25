@@ -19,3 +19,6 @@ commands:
     sign:
         usage: /sign <player>
         description: Create a method which displays a sign edit screen to a specified player, then once the player has finished editing the sign pass the string on the sign into a provided Consumer.
+    menu:
+        usage: /menu <player>
+        description: Write an Item Menu API.

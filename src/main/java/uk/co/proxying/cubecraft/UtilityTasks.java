@@ -63,7 +63,7 @@ class UtilityTasks {
      */
     private List<Integer> getOddNumbers(IntStream integerList) {
         List<Integer> oddNumbers = new ArrayList<>();
-        integerList.filter(number -> number % 2 == 0).forEach(oddNumbers::add);
+        integerList.filter(number -> (number & 1) != 0).forEach(oddNumbers::add);
 
         return oddNumbers;
     }
