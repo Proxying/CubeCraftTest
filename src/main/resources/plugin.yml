@@ -1,0 +1,18 @@
+name: CubeCraftTest
+version: ${project.version}
+main: uk.co.proxying.cubecraft.CubeCraftTest
+authors: [Proxying]
+description: CubeCraft Trial Tasks
+commands:
+    sneak:
+        usage: /sneak <player>
+        description: Without using a third party library (e.g ProtocolLib) make all players appear crouched to a given player
+    stand:
+        usage: /stand <player>
+        description: Easier than forcing the tester to log out and back in.
+    fizzbuzz:
+        usage: /fizzbuzz <low> <high>
+        description: Implement the classic fizzbuzz in java. Given a starting number and an ending number print out the value of the number unless it is a multiple of 3 in which case print out Fizz, or is a multiple of 5 in which case print out Buzz, if it is a multiple of 3 and 5 – print out FizzBuzz.
+    primitive:
+        usage: /primitive <number>
+        description: Given a String, convert it to a char[] and using nothing but primitives convert the char[] to an int. You may assume the String is a valid output of Integer.toString().
